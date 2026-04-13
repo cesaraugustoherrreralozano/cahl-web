@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAHL | Consultoría de Datos e IA en Colombia</title>
+    <meta name="description" content="Data Engineering, BI y Machine Learning en Colombia. Convertimos tus datos en decisiones rentables con Python e IA.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#020617',
+                        surface: '#0f172a',
+                        accentBlue: '#0ea5e9',
+                        accentGlow: '#38bdf8',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-dark text-slate-200">
+
+    <!-- Header/Nav -->
+    <nav class="fixed w-full z-50 glass top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="cpu" class="text-accentBlue w-8 h-8"></i>
+                    <span class="text-3xl font-black tracking-tighter text-white">CA<span class="text-accentBlue">HL</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#problema" class="hover:text-accentBlue transition-colors font-medium">Problema</a>
+                    <a href="#soluciones" class="hover:text-accentBlue transition-colors font-medium">Soluciones</a>
+                    <a href="#equipo" class="hover:text-accentBlue transition-colors font-medium">Equipo</a>
+                    <a href="#contacto" class="btn-primary px-6 py-2.5 rounded-full font-bold text-sm">Agendar Diagnóstico</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-accentBlue">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
+            <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-600/10 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-accentBlue/5 rounded-full blur-[120px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <div class="inline-flex items-center px-4 py-2 rounded-full glass border border-accentBlue/20 mb-8 animate-fade-in">
+                <span class="flex h-2 w-2 rounded-full bg-accentBlue mr-3 animate-pulse"></span>
+                <span class="text-xs font-bold tracking-widest uppercase text-accentBlue/90">Inteligencia Artificial & Datos</span>
+            </div>
+            
+            <h1 class="text-5xl lg:text-8xl font-black mb-6 leading-tight animate-fade-in delay-1 tracking-tight">
+                Deja de adivinar.<br>
+                <span class="text-gradient">Decisiones basadas en datos.</span>
+            </h1>
+            
+            <p class="text-xl text-slate-400 max-w-3xl mx-auto mb-10 animate-fade-in delay-2">
+                En CAHL somos expertos en Data Engineering, BI e IA. Construimos la infraestructura para automatizar tu información y predecir el futuro de tu negocio.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-2">
+                <a href="#contacto" class="btn-primary px-10 py-4 rounded-xl font-bold text-lg flex items-center justify-center">
+                    Solicitar Diagnóstico Gratuito
+                    <i data-lucide="chevron-right" class="ml-2 w-5 h-5"></i>
+                </a>
+                <a href="#soluciones" class="px-10 py-4 rounded-xl glass border border-slate-700 hover:bg-slate-800 transition-all font-bold text-lg flex items-center justify-center">
+                    Ver Soluciones
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Problema (Pain Points) -->
+    <section id="problema" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">¿Tu empresa tiene ceguera de datos?</h2>
+                <div class="w-20 h-1 bg-accentBlue mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pain Point 1 -->
+                <div class="glass p-8 rounded-2xl border border-white/5 card-hover">
+                    <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="file-warning" class="text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Excel que colapsan</h3>
+                    <p class="text-slate-400">Archivos pesados, errores manuales y horas perdidas tratando de cuadrar cifras inconsistentes.</p>
+                </div>
+
+                <!-- Pain Point 2 -->
+                <div class="glass p-8 rounded-2xl border border-white/5 card-hover">
+                    <div class="w-12 h-12 bg-sky-500/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="unplug" class="text-sky-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Sistemas desconectados</h3>
+                    <p class="text-slate-400">Información aislada en silos. Los departamentos no comparten una única fuente de verdad.</p>
+                </div>
+
+                <!-- Pain Point 3 -->
+                <div class="glass p-8 rounded-2xl border border-white/5 card-hover">
+                    <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="brain-circuit" class="text-cyan-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Decisiones por intuición</h3>
+                    <p class="text-slate-400">Liderar sin visibilidad clara. En CAHL eliminamos la incertidumbre con analítica avanzada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Interactivo -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">Dashboards Inteligentes</h2>
+                <p class="text-slate-400">Convertimos datos crudos en historias visuales que impulsan el crecimiento.</p>
+            </div>
+            
+            <div class="computer-frame bg-slate-900 w-full overflow-hidden border-slate-800">
+                <iframe 
+                    src="https://lookerstudio.google.com/embed/reporting/0B5FF679-375A-408B-910B-035BB9156096/page/7zXCB" 
+                    frameborder="0" 
+                    style="border:0" 
+                    allowfullscreen 
+                    class="w-full h-[600px]">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios (Soluciones) -->
+    <section id="soluciones" class="py-24 bg-surface/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Soluciones de Datos</h2>
+                <p class="text-slate-400">Modelos de trabajo diseñados para cada etapa de tu empresa.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic -->
+                <div class="glass p-8 rounded-2xl border border-white/5 flex flex-col h-full card-hover">
+                    <h3 class="text-xl font-bold text-white mb-2">Básico</h3>
+                    <div class="text-accentBlue text-sm font-medium mb-6 uppercase tracking-wider">BI & Visualización</div>
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-accentBlue w-5 h-5 mr-3 shrink-0"></i>
+                            <span>Centralización de métricas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-accentBlue w-5 h-5 mr-3 shrink-0"></i>
+                            <span>Dashboards en Looker Studio</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-accentBlue w-5 h-5 mr-3 shrink-0"></i>
+                            <span>Reporting automatizado</span>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="w-full py-3 rounded-lg border border-slate-700 hover:bg-slate-800 text-center font-bold transition-all">Más info</a>
+                </div>
+
+                <!-- Intermediate -->
+                <div class="glass p-8 rounded-3xl border-2 border-accentBlue relative transform lg:scale-105 z-10 bg-slate-900/40 flex flex-col h-full shadow-lg shadow-blue-500/10">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-accentBlue px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-white">Full Stack</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Intermedio</h3>
+                    <div class="text-accentBlue text-sm font-medium mb-6 uppercase tracking-wider">Data Engineering</div>
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-accentBlue w-5 h-5 mr-3 shrink-0"></i>
+                            <span>Todo lo del Básico+</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-accentBlue w-5 h-5 mr-3 shrink-0"></i>
+                            <span>ETL Pipelines con Python</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-accentBlue w-5 h-5 mr-3 shrink-0"></i>
+                            <span>Integración de APIs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-accentBlue w-5 h-5 mr-3 shrink-0"></i>
+                            <span>Limpieza de datos masivos</span>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="btn-primary w-full py-3 rounded-lg text-center font-bold">Solicitar Diagnóstico</a>
+                </div>
+
+                <!-- Advanced -->
+                <div class="glass p-8 rounded-2xl border border-white/5 flex flex-col h-full card-hover">
+                    <h3 class="text-xl font-bold text-white mb-2">Avanzado</h3>
+                    <div class="text-accentBlue text-sm font-medium mb-6 uppercase tracking-wider">IA & Predicción</div>
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-accentBlue w-5 h-5 mr-3 shrink-0"></i>
+                            <span>Modelos Predictivos ML</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-accentBlue w-5 h-5 mr-3 shrink-0"></i>
+                            <span>AI para Negocios</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-accentBlue w-5 h-5 mr-3 shrink-0"></i>
+                            <span>Optimización de inventarios</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="text-accentBlue w-5 h-5 mr-3 shrink-0"></i>
+                            <span>Infraestructura Cloud Scalable</span>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="w-full py-3 rounded-lg border border-slate-700 hover:bg-slate-800 text-center font-bold transition-all">Más info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- El Equipo -->
+    <section id="equipo" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass p-12 rounded-3xl border border-white/5 flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Expertos en Python para el mundo real.</h2>
+                    <p class="text-slate-400 text-lg mb-8">
+                        En CAHL hablamos el lenguaje de los datos y el de los negocios. Nuestro equipo técnico integra Ingeniería, Ciencia de Datos y Gestión Estratégica para garantizar resultados rentables.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-accentBlue/10 flex items-center justify-center">
+                                <i data-lucide="code" class="text-accentBlue w-5 h-5"></i>
+                            </div>
+                            <span class="font-medium text-white">Python Core</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-accentBlue/10 flex items-center justify-center">
+                                <i data-lucide="database" class="text-accentBlue w-5 h-5"></i>
+                            </div>
+                            <span class="font-medium text-white">SQL Advanced</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="h-40 bg-slate-800/50 rounded-2xl relative overflow-hidden">
+                                <div class="absolute inset-0 bg-gradient-to-br from-accentBlue/20 to-transparent"></div>
+                            </div>
+                            <div class="h-60 bg-slate-900 rounded-2xl border border-white/5 flex items-center justify-center">
+                                <div class="text-center">
+                                    <span class="block text-4xl font-black text-white">+10M</span>
+                                    <span class="text-xs text-slate-500 uppercase">Filas Procesadas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4 pt-8">
+                            <div class="h-60 bg-slate-900 rounded-2xl border border-white/5 flex items-center justify-center">
+                                <div class="text-center">
+                                    <span class="block text-4xl font-black text-white">100%</span>
+                                    <span class="text-xs text-slate-500 uppercase">Automatización</span>
+                                </div>
+                            </div>
+                            <div class="h-40 bg-slate-800/50 rounded-2xl relative overflow-hidden">
+                                <div class="absolute inset-0 bg-gradient-to-tr from-accentBlue/10 to-transparent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto (Formulario) -->
+    <section id="contacto" class="py-24 bg-dark relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass p-8 lg:p-12 rounded-3xl border border-white/10 shadow-2xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-white mb-4">Agenda tu Auditoría de Datos</h2>
+                    <p class="text-slate-400">Descubre cómo CAHL puede transformar tu empresa hoy mismo.</p>
+                </div>
+
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-slate-300">Nombre Completo</label>
+                            <input type="text" name="nombre" required placeholder="Ej. Juan Pérez" class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 focus:border-accentBlue focus:ring-1 focus:ring-accentBlue outline-none transition-all placeholder:text-slate-600 text-white">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-slate-300">Correo Corporativo</label>
+                            <input type="email" name="correo" required placeholder="juan@empresa.com" class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 focus:border-accentBlue focus:ring-1 focus:ring-accentBlue outline-none transition-all placeholder:text-slate-600 text-white">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-slate-300">Nombre de la Empresa</label>
+                            <input type="text" name="empresa" required placeholder="Tech Corp SAS" class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 focus:border-accentBlue focus:ring-1 focus:ring-accentBlue outline-none transition-all placeholder:text-slate-600 text-white">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-slate-300">Cargo</label>
+                            <input type="text" name="cargo" required placeholder="Gerente / Director" class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 focus:border-accentBlue focus:ring-1 focus:ring-accentBlue outline-none transition-all placeholder:text-slate-600 text-white">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-sm font-semibold text-slate-300">Reto Principal</label>
+                        <select name="reto" required class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 focus:border-accentBlue outline-none transition-all appearance-none cursor-pointer text-white">
+                            <option value="" disabled selected>Selecciona tu reto...</option>
+                            <option value="Automatizar reportes">Automatizar reportes</option>
+                            <option value="Limpiar datos">Limpiar y consolidar datos</option>
+                            <option value="Predecir demanda">Predecir demanda / Churn</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div id="form-response" class="hidden text-center text-sm font-medium p-4 rounded-lg glass border border-accentBlue/30 text-white"></div>
+
+                    <button type="submit" class="btn-primary w-full py-4 rounded-xl font-bold text-lg flex items-center justify-center space-x-2 group">
+                        <span class="btn-text">Enviar Solicitud</span>
+                        <div class="btn-loader hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                    </button>
+                    
+                    <p class="text-[10px] text-center text-slate-500 uppercase tracking-widest leading-relaxed">
+                        CAHL • Consultoría de Datos & IA
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="cpu" class="text-accentBlue w-6 h-6"></i>
+                    <span class="text-2xl font-black text-white tracking-tighter">CAHL</span>
+                </div>
+                
+                <div class="flex space-x-8 text-sm">
+                    <a href="#" class="text-slate-500 hover:text-accentBlue transition-colors">Privacidad</a>
+                    <a href="#" class="text-slate-500 hover:text-accentBlue transition-colors">Términos</a>
+                    <a href="#" class="text-slate-500 hover:text-accentBlue transition-colors">LinkedIn</a>
+                </div>
+                
+                <div class="text-slate-500 text-sm">
+                    © 2024 CAHL Colombia. Powering Businesses with Data.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/contact.js"></script>
+    <script>
+        // Init Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
